@@ -63,12 +63,10 @@ int main()
 {
     Vigenere cipher("VIGENERECIPHER");
  
-    string plaintext =
-            "Beware the Jabberwock, my son! The jaws that bite, the claws that catch!";
+ 	string plaintext;
+ 	cout<<"Masukkan plaintext: "; getline(cin,plaintext);
     string encrypted = cipher.encrypt(plaintext);
     string decrypted = cipher.decrypt(encrypted);
- 
-    cout << plaintext << endl;
     cout << "Encrypted: " << encrypted << endl;
     cout << "Decrypted: " << decrypted << endl;
 }
