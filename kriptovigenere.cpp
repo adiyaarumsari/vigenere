@@ -7,7 +7,7 @@ class Vigenere
     public:
         string key;
  
-        Vigenere(string key)
+        Vigenere(string key) //untuk memproses key
         {
             for (int i = 0; i < key.size(); ++i)
             {
@@ -18,7 +18,7 @@ class Vigenere
             }
         }
  
-        string encrypt(string text)
+        string encrypt(string text) //subprogram untuk enkripsi
         {
             string out;
  
@@ -38,7 +38,7 @@ class Vigenere
             return out;
         }
  
-        string decrypt(string text)
+        string decrypt(string text) //subprogram untuk dekripsi
         {
             string out;
  
@@ -61,7 +61,7 @@ class Vigenere
  
 int main()
 {
-    Vigenere cipher("VIGENERECIPHER");
+    Vigenere cipher("VIGENERECIPHER"); //input key
  
  	string plaintext;
  	cout<<"Masukkan plaintext: "; getline(cin,plaintext);
